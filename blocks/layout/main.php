@@ -20,7 +20,7 @@
   }
 ?>
 
-<section class="<?php echo implode(' ', $classes); ?>" id="<?php echo esc_attr($id); ?>">
+<section class="" id="<?php echo esc_attr($id); ?>">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 mt-5 mb-5">
