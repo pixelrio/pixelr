@@ -5,10 +5,10 @@
 
       //Main
       acf_register_block_type(array(
-        'name'              => 'main',
-        'title'             => __('Main'),
+        'name'              => 'main-content',
+        'title'             => __('Main Content'),
         'description'       => __('Main content section built with Bootstrap columns'),
-        'render_template'   => 'blocks/layout/main.php',
+        'render_template'   => 'blocks/layout/main-content.php',
         'category'          => 'layout',
         'icon'              => 'admin-comments',
         'keywords'          => array( 'pixelrio', 'columns', 'main', 'content' ),

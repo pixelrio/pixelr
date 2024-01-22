@@ -12,15 +12,15 @@
   $block_name = 'Main';
 
   // Create id attribute allowing for custom "anchor" value.
-  $id = $block_name . '-' . $block['id'];
-  $classes = $block['className'];
+  // $id = $block_name . '-' . $block['id'];
+  // $classes = $block['className'];
 
-  if ( !empty( $block['anchor'] ) ) {
-      $id = $block['anchor'];
-  }
+  // if ( !empty( $block['anchor'] ) ) {
+  //     $id = $block['anchor'];
+  // }
 ?>
 
-<section class="" id="<?php echo esc_attr($id); ?>">
+<section class="" id="">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 mt-5 mb-5">
@@ -31,9 +31,9 @@
 </section>
 
 <style type="text/css">
-  #<?php echo $id; ?>{
+  /* #<?php echo $id; ?>{
     
-  }
+  } */
 </style>
 
 <script>
