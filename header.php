@@ -46,7 +46,7 @@
 		<div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
 			<?php
 				wp_nav_menu( array(
-						'theme_location'    => 'header-nav',
+						'theme_location'    => 'primary',
 						'depth'             => 2,
 						'container'         => 'ul',
 						'container_class'   => '',
