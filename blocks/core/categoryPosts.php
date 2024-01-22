@@ -39,7 +39,7 @@
   <div class="container <?php echo $classes; ?>" id="<?php echo esc_attr($id); ?>">
     <div class="row">
       <div class="col mt-5 mb-4">
-        <h1><?php echo $category_name ?></h1>
+        <h1 class="display-5"><?php echo $category_name ?></h1>
       </div>
     </div>
     <div class="row mb-5">

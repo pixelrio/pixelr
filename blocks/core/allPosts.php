@@ -35,7 +35,7 @@
   <div class="container <?php echo $classes; ?>" id="<?php echo esc_attr($id); ?>">
     <div class="row">
       <div class="col mt-5 mb-4">
-        <h1><?php echo $heading ;?></h1>
+        <h1 class="display-5"><?php echo $heading ;?></h1>
       </div>
       <div class="col mt-5 text-end pt-4">
         <a href="<?php echo get_home_url() . $url ;?>" class="btn btn-tertiary btn-sm"><?php echo $cta ;?></a>

@@ -26,7 +26,7 @@ $categories = get_categories();
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h1 class="mt-5">Blog</h1>
+            <h1 class="mt-5 display-5">Blog</h1>
             <p>
               Welcome to our Blog&mdash;a digital space where knowledge meets impact! Dive into the world of Analytics, Data Science, Web Development, and Digital Marketing with our carefully curated content. While our primary focus is on empowering non-profit professionals with valuable insights, our articles occasionally venture into other industries. 
             </p>
@@ -40,7 +40,7 @@ $categories = get_categories();
               // Loop through each category
               foreach ($categories as $category) :
                 ?>
-                    <h2 class="mt-4"><?php echo esc_html($category->name); ?></h2>
+                    <h2 class="mt-4 display-5"><?php echo esc_html($category->name); ?></h2>
                     <p><?php echo esc_html($category->description); ?></p>
                     <?php
                     // Custom query to retrieve 5 posts from the current category
