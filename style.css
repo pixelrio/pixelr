@@ -738,10 +738,13 @@ textarea {
 	text-decoration: none;
 	color: black;
 }
-.current_page_item a{
+.current_page_item a,
+.current-menu-item a{
 	color: #ff4081;
+	text-decoration: none;
 }
-.navbar-nav .page_item{
+.navbar-nav .page_item,
+.navbar-nav .menu-item{
 	margin: 0 15px;
 }
 
