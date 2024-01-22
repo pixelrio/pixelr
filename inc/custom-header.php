@@ -8,33 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Pixelr
+ * @package pixelrio
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses pixelr_header_style()
+ * @uses pixelrio_header_style()
  */
-function pixelr_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'pixelr_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'pixelr_header_style',
-	) ) );
+function pixelrio_custom_header_setup() {
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'pixelrio_custom_header_args',
+			array(
+				'default-image'      => '',
+				'default-text-color' => '000000',
+				'width'              => 1000,
+				'height'             => 250,
+				'flex-height'        => true,
+				'wp-head-callback'   => 'pixelrio_header_style',
+			)
+		)
+	);
 }
-add_action( 'after_setup_theme', 'pixelr_custom_header_setup' );
+add_action( 'after_setup_theme', 'pixelrio_custom_header_setup' );
 
-if ( ! function_exists( 'pixelr_header_style' ) ) :
+if ( ! function_exists( 'pixelrio_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see pixelr_custom_header_setup().
+	 * @see pixelrio_custom_header_setup().
 	 */
-	function pixelr_header_style() {
+	function pixelrio_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
@@ -56,9 +62,9 @@ if ( ! function_exists( 'pixelr_header_style' ) ) :
 			.site-description {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
-			}
-		<?php
-		// If the user has set a custom color for the text use that.
+				}
+			<?php
+			// If the user has set a custom color for the text use that.
 		else :
 			?>
 			.site-title a,

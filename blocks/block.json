@@ -1,0 +1,17 @@
+{
+  "name": "acf/hero",
+  "title": "Hero",
+  "description": "Hero section with video background and a big headline",
+  "category": "Layout",
+  "icon": "admin-comments",
+  "keywords": ["pixelrio","hero", "video"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "hero.php"
+  },
+  "supports": {
+      "anchor": true,
+      "jsx": true,
+      "multiple": true
+  }
+}
