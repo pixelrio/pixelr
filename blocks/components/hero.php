@@ -46,7 +46,11 @@
   #<?php echo $id; ?> #Hero{
     z-index: 2;
   }
-  
+  @media (max-width: 767px) {
+    #<?php echo $id; ?> .text-jumbo{
+      font-size: 2rem;
+    }
+  }
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/vidim@1.0.2/dist/vidim.min.js"></script>
