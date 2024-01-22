@@ -738,6 +738,9 @@ textarea {
 	text-decoration: none;
 	color: black;
 }
+.menu-item a{
+	text-decoration: none !important;
+}
 .current_page_item a,
 .current-menu-item a{
 	color: #ff4081;

@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Blog Template
+ * 
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -24,13 +26,14 @@ $categories = get_categories();
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h1 class="mt-5">Blog</h1>
+            <!-- <h1 class="mt-5">Blog</h1>
             <p>
               Welcome to our Blog&mdash;a digital space where knowledge meets impact! Dive into the world of Analytics, Data Science, Web Development, and Digital Marketing with our carefully curated content. While our primary focus is on empowering non-profit professionals with valuable insights, our articles occasionally venture into other industries. 
             </p>
             <p>
               Explore the intersection of technology and purpose, as we share tips, trends, and stories aimed at making a difference. Whether you're delving into analytics, exploring the realms of data science, mastering web development, or navigating the dynamic landscape of digital marketing, our blog is your go-to resource. Join us on this journey where information meets inspiration, and let's create positive change together!
-            </p>
+            </p> -->
+            <?php get_content(); ?>
           </div>
         </div>
         <div class="row">
