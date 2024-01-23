@@ -9,7 +9,7 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-  $block_name = 'Hero';
+  $block_name = 'Hero'; 
 
   // Create id attribute allowing for custom "anchor" value.
   $id = $block_name . '-' . $block['id'];
@@ -25,7 +25,7 @@
 
 ?>
 
-<!-- START: Hero -->
+<!-- START: Hero Section -->
 <section class="Hero <?php echo $classes; ?>">
     <div class="container-fluid" id="<?php echo esc_attr($id); ?>">
         <div class="row">
